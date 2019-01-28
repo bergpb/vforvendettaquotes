@@ -2,7 +2,7 @@
 ### A simple Sintra Modular Application to show V for Vendetta quotes.
 #### Deployed into Heroku: [https://vforvendettaquotes.herokuapp.com](https://vforvendettaquotes.herokuapp.com)
 
-##### How to run:
+#### How to run:
 Clone project: 
 
     git clone https://github.com/bergpb/vforvendettaquotes.git
