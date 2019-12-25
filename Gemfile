@@ -7,6 +7,7 @@ ruby '2.5.7'
 gem 'bcrypt'
 gem 'haml'
 gem 'rake'
+gem 'faker'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'sinatra-contrib'
@@ -18,7 +19,6 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'faker'
   gem 'haml_lint', require: false
   gem 'rubocop', require: false
   gem 'shotgun'
