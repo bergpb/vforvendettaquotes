@@ -25,5 +25,5 @@ Run project:
 - Migrating database: ```RAKE_ENV=development rake db:migrate```
 - Seeding database: ```RAKE_ENV=development rake db:seed```
 - Run haml linter: ```rake haml_lint```
-- Run rubocop linter: ````rubocop -l```
-- Run rubocop autofix: ````rubocop -a```
+- Run rubocop linter: ```rubocop -l```
+- Run rubocop autofix: ```rubocop -a```
