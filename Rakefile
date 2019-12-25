@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require './app'
 require 'standard/rake'
 require 'sinatra/activerecord/rake'
+require './app'
 
 desc 'Run server with shotgun'
 task :serve do
