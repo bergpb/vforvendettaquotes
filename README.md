@@ -3,24 +3,27 @@
 #### Deployed into Heroku: [https://vforvendettaquotes.herokuapp.com](https://vforvendettaquotes.herokuapp.com)
 
 #### How to run:
-Clone project: 
+Clone project:
 
     git clone https://github.com/bergpb/vforvendettaquotes.git
-    
-Install dependencies: 
 
-    bundle install
-    
-Run migrations and seeds: 
+Install dependencies:
 
-    rake db:create db:migrate db:seed
-    
-Run project: 
+    bundle --without production
 
-    shotgun config.ru
+Run migrations and seeds:
 
-##### Some useful commands:
-- Creating a migration: ```rake db:create_migration NAME=create_name```
-- Creating database: ```rake db:create```
-- Migrating database: ```rake db:migrate```
-- Seeding database: ```rake db:seed```
+    RAKE_ENV=development rake db:create db:migrate db:seed
+
+Run project:
+
+    RAKE_ENV=development rake serve
+
+##### Some usefull commands:
+- Creating a migration: ```RAKE_ENV=development rake db:create_migration NAME=create_name```
+- Creating database: ```RAKE_ENV=development rake db:create```
+- Migrating database: ```RAKE_ENV=development rake db:migrate```
+- Seeding database: ```RAKE_ENV=development rake db:seed```
+- Run haml linter: ```rake haml_lint```
+- Run rubocop linter: ````rubocop -l```
+- Run rubocop autofix: ````rubocop -a```

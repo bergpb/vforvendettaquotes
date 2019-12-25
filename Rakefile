@@ -1,8 +1,15 @@
-require "./app"
-require "standard/rake"
-require "sinatra/activerecord/rake"
+# frozen_string_literal: true
 
-desc "haml-lint"
+require './app'
+require 'standard/rake'
+require 'sinatra/activerecord/rake'
+
+desc 'Run server with shotgun'
+task :serve do
+  sh 'shotgun config.ru'
+end
+
+desc 'Run haml linter'
 task :haml_lint do
-  sh "haml-lint app/views"
+  sh 'haml-lint app/views -r progress'
 end

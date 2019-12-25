@@ -1,7 +1,13 @@
-require './app'
+# frozen_string_literal: true
 
-# require all helpers, controllers and models
-Dir.glob('./app/{helpers,controllers,models}/*.rb').each { |file| require file }
+require File.dirname(__FILE__) + '/app'
+
+# require models
+Dir['./app/models/*.rb'].each { |file| require_relative file }
+# require helpers
+Dir['./app/helpers/*.rb'].each { |file| require_relative file }
+# require controllers
+Dir['./app/controllers/*.rb'].each { |file| require_relative file }
 
 # map the controllers to routes
 map('/') { run ApplicationController }

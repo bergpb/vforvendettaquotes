@@ -1,0 +1,10 @@
+.row
+  .column.column-100
+    %h3= @quote.title
+    %blockquote
+      %em
+        %p.description= @quote.description
+.row
+  .column.text-center
+    %a{ class: 'button button-outlines', href: '/quote/random' }
+      Get Another Quote

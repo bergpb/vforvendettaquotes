@@ -53,4 +53,4 @@ build-iPhoneSimulator/
 .byebug_history
 
 # sqlitedb
-/db/dev.sqlite3
+/db/*.sqlite3

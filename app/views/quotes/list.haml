@@ -1,0 +1,13 @@
+.row
+  .column.column-100
+    %h3 Some Quotes
+    - @quotes.each do |quote|
+      %p
+        %strong= quote.title
+        %blockquote
+          %p
+            %em
+              %span= quote.description
+.row
+  .column.text-center
+    %a{ class: 'button button-outlines', href: '/quotes' } More Quotes

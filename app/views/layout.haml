@@ -1,23 +1,22 @@
 %html
-	%head
-		- if @title
-			%title= "V for Vendetta Quotes | #{@title}"
-		- else
-			%title= "V for Vendetta Quotes"
-		%meta{:charset => "utf-8"}
-		%meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"} 
-		= css 'main', 'milligram.min'
-	%body
-		%main.wrapper
-			%nav.navigation
-				%section
-					.navigation-title 
-						%a.title{:href => "/"}
-							%strong= "V for Vendetta Quotes"
-					- if @title	!= "Home"
-						%ul.navigation-list.float-right
-							%li.navigation-item
-								%a.navigation-link{:href => "/"} Home
-			.container
-				= yield
-			
+  %head
+    - if @title
+      %title `C for Vendetta Quotes | #{@title}`
+    - else
+      %title V for Vendetta Quotes
+    %meta{ charset: 'utf-8' }
+    %meta{ content: 'width=device-width, initial-scale=1.0', name: 'viewport' }
+    = css 'main', 'milligram.min'
+  %body
+    %main.wrapper
+      %nav.navigation
+        %section
+          .navigation-title
+            %a.title{ href: '/' }
+              %strong V for Vendetta Quotes
+          - if @title != 'Home'
+            %ul.navigation-list.float-right
+              %li.navigation-item
+                %a.navigation-link{ href: '/' } Home
+      .container
+        = yield
