@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'faker'
-Dir.glob('./app/{models}/*.rb').each { |file| require file }
+Dir.glob('./models/*.rb').each { |file| require file }
 
 puts 'Running seeds...'
 200.times do

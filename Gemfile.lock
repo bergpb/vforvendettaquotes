@@ -18,6 +18,8 @@ GEM
     bcrypt (3.1.12)
     byebug (10.0.2)
     concurrent-ruby (1.1.4)
+    daemons (1.3.1)
+    eventmachine (1.2.7)
     faker (1.9.1)
       i18n (>= 0.7)
     haml (5.0.4)
@@ -74,10 +76,12 @@ GEM
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
     sqlite3 (1.3.13)
-    standard (0.0.25)
-      rubocop (>= 0.63)
     sysexits (1.2.0)
     temple (0.8.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
     thread_safe (0.3.6)
     tilt (2.0.9)
     tzinfo (1.2.5)
@@ -102,7 +106,7 @@ DEPENDENCIES
   sinatra-contrib
   sinatra-flash
   sqlite3
-  standard
+  thin
 
 RUBY VERSION
    ruby 2.5.7p206

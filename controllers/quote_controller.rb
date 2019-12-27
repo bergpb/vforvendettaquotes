@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class QuoteController < Application
+class QuoteController < App
   helpers ApplicationHelper
 
   get '/' do

@@ -10,5 +10,5 @@ end
 
 desc 'Run haml linter'
 task :haml_lint do
-  sh 'haml-lint app/views -r progress'
+  sh 'haml-lint views -r progress'
 end

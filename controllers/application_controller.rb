@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ApplicationController < Application
+class ApplicationController < App
   helpers ApplicationHelper
 
   get '/' do

@@ -3,9 +3,10 @@
 require 'haml'
 require 'sinatra'
 require 'sinatra/base'
+require 'sinatra/reloader' if development?
 require './config/environments'
 
-class Application < Sinatra::Base
+class App < Sinatra::Base
   set :environment, ENV['RACK_ENV']
-  set :views, File.expand_path('app/views', __dir__)
+  set :server, 'thin'
 end

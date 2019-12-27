@@ -5,13 +5,14 @@ source 'https://rubygems.org'
 ruby '2.5.7'
 
 gem 'bcrypt'
+gem 'faker'
 gem 'haml'
 gem 'rake'
-gem 'faker'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'sinatra-contrib'
 gem 'sinatra-flash'
+gem 'thin'
 
 group :production do
   gem 'pg'
@@ -23,5 +24,4 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'shotgun'
   gem 'sqlite3'
-  gem 'standard'
 end
